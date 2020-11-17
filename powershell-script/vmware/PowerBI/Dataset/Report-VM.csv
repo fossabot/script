@@ -1,0 +1,27 @@
+Name,PowerState,VMHost,NumCpu,MemoryMB,UsedSpaceGB,HardDiskSizeGB,ResourcePool,IPaddress,GuestOS,Datastore
+LAB-ADC,PoweredOn,10.10.39.111,4,4096,14,60,ActiveDirectory RSP,10.10.10.31,Microsoft Windows Server 2012 (64-bit),NETAPP-01
+LAB-DC,PoweredOn,10.10.39.112,4,4096,19,60,ActiveDirectory RSP,10.10.10.30,Microsoft Windows Server 2012 (64-bit),NETAPP-01
+LAB-Docker-Manager,PoweredOn,10.10.39.112,2,8192,57,50,Application RSP,10.10.10.40,Ubuntu Linux (64-bit),QNAP-01
+LAB-Docker-Worker-01,PoweredOn,10.10.39.111,2,2048,9,50,Application RSP,10.10.10.41,Ubuntu Linux (64-bit),QNAP-01
+LAB-Docker-Worker-02,PoweredOn,10.10.39.113,2,2048,9,50,Application RSP,10.10.10.42,Ubuntu Linux (64-bit),QNAP-01
+LAB-Elastic,PoweredOn,10.10.39.111,2,2048,51,50,Application RSP,10.10.10.50,Ubuntu Linux (64-bit),QNAP-01
+LAB-ESXi-01,PoweredOn,10.10.39.111,4,8192,63,140,VMware RSP,10.10.10.10,VMware ESXi 6.5 or later,NETAPP-01
+LAB-ESXi-02,PoweredOn,10.10.39.112,4,8192,13,140,VMware RSP,10.10.10.11,VMware ESXi 6.5 or later,NETAPP-01
+LAB-FreeNAS,PoweredOn,10.10.39.111,2,2048,3,50,Application RSP,10.10.10.51,FreeBSD 11 (64-bit),QNAP-01
+LAB-Guest,PoweredOn,10.10.39.113,4,4096,15,60,LAB RSP,10.10.10.52,Microsoft Windows 10 (64-bit) ,QNAP-01
+LAB-Hadoop,PoweredOn,10.10.39.113,4,4096,51,50,Application RSP,10.10.10.53,Ubuntu Linux (64-bit),QNAP-01
+LAB-iRedMail,PoweredOn,10.10.39.111,2,2048,8,50,Application RSP,10.10.10.54,Ubuntu Linux (64-bit),QNAP-01
+LAB-ISP,PoweredOn,10.10.39.112,2,2048,54,50,Application RSP,10.10.10.55,Ubuntu Linux (64-bit),QNAP-01
+LAB-Java,PoweredOff,10.10.39.111,2,2048,16,24,LAB RSP,10.10.10.56,Microsoft Windows 7 (32-bit),QNAP-01
+LAB-OpenVPN,PoweredOn,10.10.39.111,1,1024,5,50,Network RSP,10.10.10.57,Ubuntu Linux (64-bit),QNAP-01
+LAB-ORA,PoweredOn,10.10.39.113,2,2048,122,120,Database RSP,10.10.11.10,Oracle Linux 6 (64-bit),BUFF-01
+LAB-SnipIT,PoweredOff,10.10.39.113,2,2048,9,20,Application RSP,10.10.10.58,Ubuntu Linux (64-bit),QNAP-01
+LAB-SOL10,PoweredOn,10.10.39.111,2,2048,15,50,Database RSP,10.10.11.11,Oracle Solaris 10 (64-bit),BUFF-01
+LAB-SOL11,PoweredOn,10.10.39.112,2,2048,16,50,Database RSP,10.10.11.12,Oracle Solaris 11 (64-bit),BUFF-01
+LAB-Solr,PoweredOn,10.10.39.111,2,2048,8,15,Application RSP,10.10.10.59,Debian GNU/Linux 9 (64-bit),QNAP-01
+LAB-SquirrelMail,PoweredOn,10.10.39.111,2,2048,4,50,Application RSP,10.10.10.60,CentOS 7 (64-bit),QNAP-01
+LAB-VCSA,PoweredOn,10.10.39.111,2,10240,30,280,VMware RSP,10.10.10.20,Other 3.x Linux (64-bit),NETAPP-01
+LAB-VIC,PoweredOff,10.10.39.113,2,8192,13,80,VMware RSP,10.10.10.22,VMware ESXi 6.5 or later,NETAPP-01
+LAB-VirtualHost,PoweredOn,10.10.39.111,2,2048,7,50,LAB RSP,10.10.10.61,Ubuntu Linux (64-bit),QNAP-01
+LAB-VROPS,PoweredOn,10.10.39.111,4,8192,40,274,VMware RSP,10.10.10.21,SUSE Linux Enterprise 11 (64-bit),NETAPP-01
+LAB-WIN2K12R2,PoweredOn,10.10.39.112,4,4096,23,60,Database RSP,10.10.11.13,Microsoft Windows Server 2012 (64-bit),BUFF-01
