@@ -1,0 +1,2 @@
+0 0 * * * bash /home/oracle/script/backup.sh
+0 0 * * * bash /home/oracle/script/clear-archivelog.sh
