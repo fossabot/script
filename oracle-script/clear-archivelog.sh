@@ -1,5 +1,6 @@
 #!/bin/bash
-for i in PRO DEV
+source configuration.sh
+for i in INSTANCE_1 INSTANCE_2
 do
 
 export ORACLE_SID = $i
