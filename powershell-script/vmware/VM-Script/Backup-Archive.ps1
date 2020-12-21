@@ -7,7 +7,7 @@ function Backup-VirtualMachine {
 
     foreach ($line in $vm) {
 
-	    $name = 'Backup-' + $policy + '-' + $date + '-' + $line
+	    $name = 'Archive-' + $policy + '-' + $line
 	    $dsdc = Get-Datastore $datastore -Datacenter $datacenter
 	    $all += 1
 
@@ -33,10 +33,10 @@ function Backup-VirtualMachine {
 
     }    
 
-    . "$PSScriptRoot\Notification-Line.ps1" -policy $policy -all $all -count $count
+    If ($error -eq '') { . "$PSScriptRoot\Notification-Line.ps1" -policy $policy -all $all -count $count } Else { }
            
     Disconnect-VIServer -Server $server -Confirm:$false
 
 }
 
-Backup-VirtualMachine -server $server -credential $credential -vm $vm_daily -path $path_log_daily -folder $folder_daily -datastore $datastore_backup -policy 'Daily'
+Backup-VirtualMachine -server $server -credential $credential -vm $vm_archive -path $path_log_archive -folder $folder_archive -datastore $datastore_backup -policy $year

@@ -1,30 +1,33 @@
 . "$PSScriptRoot\Configuration.ps1"
-Connect-VIServer -Server $server -Credential $credential
 
-$vm = $vm_ova
-$path = $path_export_ova
-$datastore = $datastore
+function Export-OVA {
 
-foreach ($line in $vm) {
+    param ($server, $credential, $vm, $path, $datastore)
+    Connect-VIServer -Server $server -Credential $credential
 
-	$name = 'Export-OVA-' + $date + '-' + $line
-	$dsdc = Get-Datastore $datastore -Datacenter $datacenter
+    foreach ($line in $vm) {
 
-	try {
+	    $name = 'Export-OVA-' + $date + '-' + $line
+	    $dsdc = Get-Datastore $datastore -Datacenter $datacenter
 
-		New-VM -Name $name -VM $line -VMHost $vmhost -Datastore $dsdc -ResourcePool $resourcepool -ErrorAction Stop
-		Get-VM -Name $line | Export-VApp -Destination $path -Format Ova
-		Remove-VM $name -DeleteFromDisk -Confirm:$false -ErrorAction Stop
+	    try {
 
-	} catch {
+		    New-VM -Name $name -VM $line -VMHost $vmhost -Datastore $dsdc -ResourcePool $resourcepool -ErrorAction Stop
+		    Get-VM -Name $line | Export-VApp -Destination $path -Format Ova
+		    Remove-VM $name -DeleteFromDisk -Confirm:$false -ErrorAction Stop
 
-		# $ErrorMessage = $_.Exception.Message
-    		# $FailedItem = $_.Exception.ItemName
-		# $error += $line + "`r`n"
+	    } catch {
 
-	}
+		    $ErrorMessage = $_.Exception.Message
+    	    $FailedItem = $_.Exception.ItemName
+		    $error += $line + "`r`n"
+
+	    }
+
+    }
+
+    Disconnect-VIServer -Server $server -Confirm:$false
 
 }
 
-Disconnect-VIServer -Server $server -Confirm:$false
-
+Export-OVA -server $server -credential $credential -vm $vm_ova -path $path_ova -datastore $datastore_backup

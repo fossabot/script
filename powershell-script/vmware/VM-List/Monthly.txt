@@ -1,4 +1,4 @@
-ISPConfig-AC
-ISPConfig-HR
+VPS-AC
+VPS-HR
 VPS-IT
 VPS-PR

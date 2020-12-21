@@ -1,0 +1,2 @@
+WIN2K12-VeeamBackup
+WIN2K12-VeeamVAO

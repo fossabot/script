@@ -31,7 +31,7 @@ function Backup-VirtualMachine {
 
 	    }
 
-    }    
+    }
 
     . "$PSScriptRoot\Notification-Line.ps1" -policy $policy -all $all -count $count
            
@@ -39,4 +39,4 @@ function Backup-VirtualMachine {
 
 }
 
-Backup-VirtualMachine -server $server -credential $credential -vm $vm_daily -path $path_log_daily -folder $folder_daily -datastore $datastore_backup -policy 'Daily'
+Backup-VirtualMachine -server $server -credential $credential -vm $vm_onetime -path $path_log_onetime -folder $folder_onetime -datastore $datastore_backup -policy 'OneTime'
