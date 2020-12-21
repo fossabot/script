@@ -1,7 +1,7 @@
 Import-Module VMware.VimAutomation.Core
 
 # General Setting
-$Global:root = "C:\powershell-script\"
+$Global:root = "C:\backup-powershell\"
 $Global:date = Get-Date -Format yyyyMMdd
 $Global:date_audit = Get-Date -UFormat %c
 $Global:month = Get-Date -Format MMM
