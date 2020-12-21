@@ -61,7 +61,7 @@ $Global:report_backup = $root + 'VM-Report\Backup\Backup-' + $date + '.csv'
 $Global:report_datastore = $root + 'VM-Report\Datastore\Datastore-' + $date + '.csv'
 $Global:report_servicetag = $root + 'VM-Report\ServiceTag\ServiceTag-' + $date + '.csv'
 $Global:report_summary = $root + 'VM-Report\Summary\Summary-' + $date + '.csv'
-$Global:report_vm = $root + 'VM-Report\VM\Report-VM-' + $date + '.csv'
+$Global:report_vm = $root + 'VM-Report\VM\VM-' + $date + '.csv'
 
 # PowerBI
 $Global:powerbi_vm = $root + 'PowerBI\Dataset\Dataset-VM.csv'
