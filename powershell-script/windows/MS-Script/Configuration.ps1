@@ -7,6 +7,9 @@ $Global:month = Get-Date -Format MMM
 $Global:year = Get-Date -Format yyyy
 $Global:interest = $year + '-' + $month
 
+# MS-Path
+$Global:path_video = 'E:\Video'
+
 # MS-Report
 $Global:report_msrc = $root + 'MS-Report\MSRC\MSRC-' + $date + '.html'
 
