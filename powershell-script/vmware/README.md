@@ -1,7 +1,7 @@
 # VMware Powershell Script
 Documentation for administrator vmware and organization not have money
 
-# Sturcture Path
+# Structure Path
 #### Credential
 This folder keep credential of VMware ESXi include username and hash password for run script task schedule without input password
 
@@ -10,7 +10,7 @@ This folder keep recheck and timestamp by manual
 * recheck (folder seperate by frequency backup)
 * timestamp (text file is ccc.txt)
 
-Note : CCC (Client Confirmation Checklist) 
+Note : CCC (Client Confirmation Checklist)
 
 #### VM-List
 This folder keep list vm name for backup seperate text file by frequency backup
@@ -23,7 +23,7 @@ This folder keep powershell script for run script task schedule seperate script 
 * audit script (manual)
 * backup script (task schedule)
 * check script (task schedule)
-* create credentail script (one time)
+* create credential script (one time)
 * delete script (task schedule)
 * report datastore script (task schedule)
 * report vm script (task schedule)
